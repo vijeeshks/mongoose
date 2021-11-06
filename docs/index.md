@@ -29,11 +29,13 @@ connection to the `test` database on our locally running instance of MongoDB.
 // getting-started.js
 const mongoose = require('mongoose');
 
-main().catch(err => console.log(err));
+
 
 async function main() {
   await mongoose.connect('mongodb://localhost:27017/test');
 }
+
+main().catch(err => console.log(err));
 ```
 
 For brevity, let's assume that all following code is within the `main()` function.
